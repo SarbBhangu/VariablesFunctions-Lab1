@@ -4,3 +4,9 @@ function formatFullName(firstName,lastName) {
     return `${formattedLast}, ${formattedFirst}`
 }
 console.log(formatFullName("sarb","bhangu"))
+
+function calculateTotalCost (price,quantity,taxRate) {
+    let totalCost = ((price * quantity) * (1 + taxRate))
+    return totalCost
+}
+console.log(calculateTotalCost(50,2,0.07));
