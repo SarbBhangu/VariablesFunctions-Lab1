@@ -28,3 +28,11 @@ Return an appropriate string message for each scenario.
 If no discount is provided, calculate the total cost as before.
 
 ## Reflection
+1. How did you approach creating more flexible functions with parameter?
+- By adding a discount parameter and using an if loop statement to handle it. 
+
+2. What challenges did you face while incorporating conditional logic in your functions?
+- Had challenges formatting the names so first letters always come back capatilized. Turns out I had return `${lastName}, ${firstName}` instead of return `${formattedLast}, ${formattedFirst}`.
+
+3. How does refactoring improve the readability and maintainability of your code?
+- I kept my code clean as I went. It helped me stay organized and made fuctions easier to read. 
