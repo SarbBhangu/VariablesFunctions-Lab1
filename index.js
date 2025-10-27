@@ -5,11 +5,17 @@ function formatFullName(firstName,lastName) {
 }
 console.log(formatFullName("sarb","bhangu"))
 
-function calculateTotalCost (price,quantity,taxRate) {
+function calculateTotalCost (price,quantity,taxRate,discount) {
     let totalCost = ((price * quantity) * (1 + taxRate))
+    if (discount) {
+        totalCost = ((price * quantity - discount) * (1 + taxRate));}
+        else {
+            totalCost = ((price * quantity) * (1 + taxRate)); 
+        }
     return totalCost
 }
 console.log(calculateTotalCost(50,2,0.07));
+console.log(calculateTotalCost(50, 2, 0.07, 10)); 
 
 function checkEligibility(age,isEmployed){
     if (age > 18 && isEmployed === true)
